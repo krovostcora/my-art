@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background: #F0F1E9;
+    font-family: Arial, sans-serif;
+}
+.container {
+    position: relative;
+    /*width: max(100%, 100%);*/
+
+    margin: 0 auto;
+}
+.header {
+    position: sticky;
+    width: max(100%, 100%);
+    height: 140px;
+    left: -10px;
+    right: -30px;
+    top: 0;
+    background: #DFD2BF;
+    display: flex;
+    align-items: center;
+    padding: 0 53px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+.header h1 {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 40px;
+    color: #4E2D18;
+}
+.nav {
+    display: flex;
+    gap: 30px;
+}
+.nav a {
+    font-family: 'Crushed', sans-serif;
+    font-size: 40px;
+    color: #4E2D18;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #4E2D18;
+}
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.gallery div {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.gallery img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.about {
+    max-width: 90%;
+    margin: 0 100px;
+    padding: 20px;
+    text-align: left;
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    color: #4E2D18;
+    line-height: 1.6;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.support {
+    max-width: 90%;
+    margin: 0 100px;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Antic Slab', cursive;
+    font-size: 28px;
+    color: #4E2D18;
+    line-height: 1.6;
+}
+
+.support a {
+    text-decoration: underline;
+    color: #4E2D18;
+
+}
+
+.support h2 {
+    font-family: 'Antic Slab', cursive;
+    font-size: 40px;
+    color: #4E2D18;
+}
+
+.support h3 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.support .end{
+    font-family: "Caveat", serif;
+}
